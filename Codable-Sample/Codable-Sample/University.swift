@@ -36,13 +36,15 @@ struct University: Codable {
         self.country = try? values?.decode(String.self, forKey: .country) ?? nil
     }
     
+    
+    
     enum CodingKeys: String, CodingKey {
         case code = "alpha_two_code"
         case name
-        case webPagesArray = "web_pages"
+        case webPagesArray = "web_pges"
         case stateProvince = "state-province"
         case domains
         case country
     }
-   
+
 }
